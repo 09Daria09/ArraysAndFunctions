@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор Задания</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <div class="modal-content">
+        <h2>Выберите задание для проверки:</h2>
+        <form id="assignmentForm">
+            <dev class="block">
+                <input type="radio" id="assignment1" name="assignment" value="1.Bикторина">
+                <label for="assignment1">1.Bикторина</label><br>
+
+                <input type="radio" id="assignment2" name="assignment" value="2.Проверка ФИО">
+                <label for="assignment2">2.Проверка ФИО</label><br>
+
+                <input type="radio" id="assignment3" name="assignment" value="3.Разделение веб-адреса">
+                <label for="assignment3">3.Разделение веб-адреса</label><br>
+
+                <input type="radio" id="assignment4" name="assignment" value="4.шахматная доска">
+                <label for="assignment4">4.Шахматная доска</label><br>
+            </dev>
+            <button type="button" onclick="submitChoice()">Отправить выбор</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

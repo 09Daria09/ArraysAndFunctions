@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шахматная доска</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <section>
+
+        <div id="chessBoard" class="board"></div>
+
+        <script>
+            function createChessBoard() {
+                const board = document.getElementById('chessBoard');
+
+                for (let i = 0; i < 64; i++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    if ((Math.floor(i / 8) + i) % 2 === 0) {
+                        cell.classList.add('white');
+                    } else {
+                        cell.classList.add('black');
+                    }
+                    board.appendChild(cell);
+                }
+            }
+            document.addEventListener('DOMContentLoaded', createChessBoard);
+        </script>
+    </section>
+</body>
+
+</html>
